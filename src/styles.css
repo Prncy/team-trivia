@@ -143,7 +143,6 @@ body{background:#F3F0E8;color:#192B35}
 
 
 /* Final polish: balanced operator and audience visibility */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
 :root{font-family:'DM Sans',Arial,sans-serif}
 .setup-card h1,.completion-panel h1,.category-stage h1,.question-text,.panel-heading h2,.menu-head h2,.timer-box>strong{font-family:'DM Sans',Arial,sans-serif}
 .game-layout{grid-template-columns:minmax(350px,35%) minmax(0,65%);align-items:stretch}
@@ -193,4 +192,94 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
  .question-text{font-size:clamp(28px,7vw,38px)}
  .timer-box>strong{font-size:46px}
  .score-table{min-width:480px}
+}
+
+
+/* Team Trivia — monochrome with a restrained vermilion accent */
+:root{color:#191817;background:#F3F0E9}
+body,.setup-page,.app-shell{background:#F3F0E9;color:#191817}
+.muted,.intro,.form-grid small,.team-name-grid small,.modal-label small,
+.brand small,.top-meta,.stage-kicker,.question-bank-note,.score-footer,
+.timer-label,.review-row p,.app-footer{color:#69645E}
+.eyebrow{color:#625D57}
+.setup-card,.completion-panel,.score-panel,.play-panel,.menu-card{
+  background:#FFFEFB;color:#191817;border:1px solid #D7D2C9;
+  border-radius:10px;box-shadow:0 3px 12px rgba(25,24,23,.045)
+}
+.setup-card h1,.completion-panel h1,.category-stage h1,.question-text,
+.panel-heading h2,.menu-head h2,.answer-review h2{color:#191817}
+.setup-card h1 span{color:#B84A32}
+.brand-mark,.brand-mark.small{background:#191817;color:#F3F0E9;border-radius:5px}
+.form-grid label,.team-name-grid label,.modal-label{color:#292724}
+.form-grid input:not([type=range]),.form-grid select,.team-name-grid input,.modal-label input{
+  background:#fff;color:#191817;border:1px solid #CFC9BF;border-radius:5px
+}
+.form-grid input:focus,.form-grid select:focus,.modal-label input:focus{
+  border-color:#B84A32;outline:2px solid rgba(184,74,50,.14)
+}
+.form-grid input[type=range]{accent-color:#191817}
+.rule-note{background:#F3F0E9;border:1px solid #D7D2C9;color:#625D57;border-radius:5px}
+.rule-note b{color:#191817}
+.primary{background:#191817;color:#fff;border-radius:5px}
+.primary:hover{background:#393632}
+.secondary{background:#E8E4DC;color:#191817;border:1px solid #CFC9BF;border-radius:5px}
+.subtle-button{background:transparent;color:#292724;border:1px solid #BDB7AD;border-radius:5px}
+.topbar{background:#FFFEFB;border-bottom:1px solid #D7D2C9}
+.brand b{color:#191817}
+.status-dot,.status-dot.paused{background:#B84A32;box-shadow:none}
+.menu-button,.icon-button{background:#F3F0E9;color:#191817;border:1px solid #CFC9BF;border-radius:5px}
+.game-layout{grid-template-columns:minmax(350px,35%) minmax(0,65%);gap:18px}
+.score-panel,.play-panel{border-radius:8px;box-shadow:none}
+.live-pill{color:#625D57;background:#EEEAE3;border-radius:4px}
+.score-table th{color:#625D57;border-bottom:1px solid #D7D2C9}
+.score-table td{color:#514C46;border-bottom:1px solid #E9E5DE}
+.score-table td:first-child{color:#191817}
+.score-table tr.active-team{background:#F1EDE6}
+.score-table tr.active-team td:first-child{color:#191817}
+.team-dot,.active-team .team-dot{background:#8A837A;box-shadow:none}
+.total-cell{color:#191817!important}
+.pass-mark{color:#625D57}
+.progress-track,.timer-track{background:#E4DFD6;border-radius:2px}
+.progress-track div,.timer-track div{background:#191817;border-radius:2px}
+.stage-number{background:#EEEAE3;color:#191817;border-radius:3px}
+.category-tile{background:#fff;border:1px solid #D7D2C9;color:#191817;border-radius:5px}
+.category-tile:hover{background:#F3F0E9;border-color:#191817}
+.category-icon{color:#625D57}
+.difficulty{color:#625D57;border:1px solid #CFC9BF;border-radius:3px}
+.category-label{background:#EEEAE3;color:#393632;border-radius:3px}
+.timer-box{background:#F3F0E9;border:1px solid #D7D2C9;border-radius:5px}
+.timer-box>strong{color:#191817}
+.text-button{color:#514C46}
+.timer-box.urgent>strong,.time-up{color:#B84A32}
+.timer-box.urgent .timer-track div{background:#B84A32}
+.answer-review{background:#F3F0E9;border:1px solid #D7D2C9;border-radius:5px}
+.result-buttons button{border-radius:5px}
+.result-correct{background:#E8E4DC;color:#191817;border-color:#BDB7AD!important}
+.result-wrong{background:#F4E7E2;color:#8F3425;border-color:#D9B0A4!important}
+.result-pass{background:#EEEAE3;color:#514C46;border-color:#CFC9BF!important}
+.pause-banner{background:#EEEAE3;border:1px solid #CFC9BF;color:#393632;border-radius:5px}
+.pause-banner span{color:#625D57}
+.trophy{color:#191817}
+.rank-row{border-bottom:1px solid #E5E0D8}
+.rank-number,.leaderboard-modal .rank-row:first-of-type .rank-number{
+  background:#E8E4DC;color:#191817;border-radius:4px
+}
+.rank-row strong{color:#191817}
+.winner-callout{background:#EEEAE3;border:1px solid #CFC9BF;color:#514C46;border-radius:5px}
+.winner-callout strong{color:#191817}
+.menu-overlay{background:rgba(25,24,23,.55)}
+.menu-item{background:#F3F0E9;color:#191817;border:1px solid #D7D2C9;border-radius:5px}
+.menu-item:hover{background:#E8E4DC;border-color:#8A837A}
+.danger-text,.notice{color:#B84A32}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #B84A32;outline-offset:3px}
+@media(max-width:1100px){
+ .game-layout{grid-template-columns:minmax(300px,38%) minmax(0,62%)}
+}
+@media(max-width:900px){
+ .game-layout{grid-template-columns:minmax(0,1fr)}
+ .score-panel,.play-panel{min-height:auto}
+ .play-panel{min-height:480px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
